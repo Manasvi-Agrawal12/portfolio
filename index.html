@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manasvi Agrawal | Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Manasvi Agrawal, Computer Science graduate interested in software engineering, programming, and quality engineering.">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b1120;
+      color: #e5e7eb;
+      line-height: 1.7
+    }
+
+    .container {
+      width: min(1000px, 90%);
+      margin: auto
+    }
+
+    header {
+      padding: 20px 0;
+      border-bottom: 1px solid #263247
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap
+    }
+
+    nav strong {
+      color: #67e8f9
+    }
+
+    nav div {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap
+    }
+
+    a {
+      color: #67e8f9;
+      text-decoration: none
+    }
+
+    a:hover {
+      text-decoration: underline
+    }
+
+    .hero {
+      padding: 85px 0 65px
+    }
+
+    .eyebrow {
+      color: #67e8f9;
+      font-weight: bold;
+      letter-spacing: 2px
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 7vw, 4.5rem);
+      line-height: 1.15;
+      margin: 15px 0
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 18px
+    }
+
+    h3 {
+      color: white;
+      margin-bottom: 8px
+    }
+
+    p {
+      margin: 10px 0
+    }
+
+    .muted {
+      color: #aab6ca
+    }
+
+    .hero p {
+      max-width: 700px
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 16px;
+      border: 1px solid #67e8f9;
+      border-radius: 7px;
+      margin: 12px 10px 0 0
+    }
+
+    section {
+      padding: 42px 0;
+      border-top: 1px solid #263247
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px
+    }
+
+    .card {
+      background: #121c30;
+      border: 1px solid #293750;
+      padding: 22px;
+      border-radius: 12px
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px
+    }
+
+    .tag {
+      background: #1d2b40;
+      padding: 4px 10px;
+      border-radius: 5px;
+      font-size: .9rem
+    }
+
+    ul {
+      padding-left: 20px
+    }
+
+    li {
+      margin: 7px 0
+    }
+
+    footer {
+      text-align: center;
+      padding: 28px 0;
+      color: #aab6ca
+    }
+
+    @media(max-width:550px) {
+      nav {
+        align-items: flex-start;
+        flex-direction: column
+      }
+
+      .hero {
+        padding-top: 55px
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="container">
+      <strong>MANASVI AGRAWAL</strong>
+      <div>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container hero">
+      <div class="eyebrow">SOFTWARE ENGINEERING PORTFOLIO</div>
+      <h1>Hi, I'm Manasvi Agrawal.</h1>
+      <h2>Computer Science Graduate | Software Engineer</h2>
+      <p class="muted">
+        I am a Computer Science graduate with a strong academic background
+        and experience in software testing, programming, and web applications.
+        I enjoy solving technical problems, exploring how software systems work,
+        and improving application quality through structured testing.
+      </p>
+      <a class="button" href="#projects">Explore My Projects</a>
+      <a class="button" href="#contact">Contact Me</a>
+      <div class="tags">
+        <span class="tag">Python</span>
+        <span class="tag">C++</span>
+        <span class="tag">SQL</span>
+        <span class="tag">Selenium</span>
+        <span class="tag">Problem Solving</span>
+      </div>
+    </div>
+
+    <section id="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <p class="muted">
+          I graduated with a B.Tech in Computer Science and Engineering from
+          JECRC College, RTU Jaipur, with a CGPA of 9.31.
+          My technical interests include programming, software quality assurance,
+          test automation, and backend data validation.
+        </p>
+        <p class="muted">
+          Through my training and professional experience, I have developed an
+          understanding of software development and testing workflows. I value
+          logical thinking, attention to detail, clear documentation, and
+          continuous learning.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <h2>Technical Skills</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Programming</h3>
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">C++</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">OOP</span>
+              <span class="tag">DSA Fundamentals</span>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Testing & Automation</h3>
+            <div class="tags">
+              <span class="tag">Manual Testing</span>
+              <span class="tag">Selenium WebDriver</span>
+              <span class="tag">pytest</span>
+              <span class="tag">Postman</span>
+              <span class="tag">Regression Testing</span>
+              <span class="tag">Jira</span>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Database & Tools</h3>
+            <div class="tags">
+              <span class="tag">SQL</span>
+              <span class="tag">DBMS</span>
+              <span class="tag">Git & GitHub</span>
+              <span class="tag">Linux</span>
+              <span class="tag">AWS Fundamentals</span>
+              <span class="tag">Client-Server Architecture</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Bank Management System</h3>
+            <p class="muted">C++ · OOP · SQL · Linux</p>
+            <p>
+              A banking application focused on customer records, account operations,
+              and transaction tracking. This project helped me apply programming
+              fundamentals and understand database-backed application workflows.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Quiz Application</h3>
+            <p class="muted">HTML · CSS · JavaScript</p>
+            <p>
+              A timed quiz application featuring multiple-choice questions,
+              a countdown timer, and scoring logic, including penalties for
+              incorrect answers.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Test Automation Framework</h3>
+            <p class="muted">Python · Selenium · pytest</p>
+            <p>
+              A portfolio project for developing browser automation skills using
+              structured test cases, reusable components, and assertions.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>API & Database Testing</h3>
+            <p class="muted">Postman · SQL</p>
+            <p>
+              A practice project focused on API response validation, status codes,
+              negative test cases, and SQL queries for checking data consistency.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="container">
+        <h2>Experience & Training</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>QA Engineer Intern</h3>
+            <p class="muted">Futures First | May 2026 – Present</p>
+            <ul>
+              <li>Design test scenarios covering positive, negative, and edge cases.</li>
+              <li>Execute functional and regression testing.</li>
+              <li>Use Selenium with Python for browser automation.</li>
+              <li>Validate APIs with Postman and track defects in Jira.</li>
+              <li>Collaborate with developers to reproduce and verify fixes.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Software Development Trainee</h3>
+            <p class="muted">Accenture | Sep 2025 – Feb 2026</p>
+            <ul>
+              <li>Completed training in Python, AWS, Linux, and C++ client-server architecture.</li>
+              <li>Applied C++ and OOP concepts in a Bank Management System with SQL.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Web Development Intern</h3>
+            <p class="muted">Celebal Technologies</p>
+            <p>
+              Gained experience with React.js and web application development.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Full Stack Development Training</h3>
+            <p class="muted">UPFLAIRS | Jul 2023 – Sep 2023</p>
+            <p>
+              Completed MERN stack training and worked on an Online Food Shop
+              application with a team.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="container">
+        <h2>Education</h2>
+        <div class="card">
+          <h3>B.Tech in Computer Science & Engineering</h3>
+          <p>JECRC College, RTU Jaipur · 2025</p>
+          <p class="muted">CGPA: 9.31 / 10</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="challenge">
+      <div class="container">
+        <h2>Technical Learning & Challenges</h2>
+        <div class="card">
+          <h3>Programming Challenges</h3>
+          <p class="muted">
+            I use programming challenges to strengthen my understanding of
+            problem-solving, input handling, edge cases, and implementation.
+            I am continuing to develop my coding skills through practical exercises
+            and technical assessments.
+          </p>
+          <p>
+            My focus is on understanding the problem, developing a correct solution,
+            and checking its behavior against relevant test cases.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p class="muted">Thank you for visiting my portfolio.</p>
+        <p>Email: <a href="mailto:manasviagrawal2122@gmail.com">manasviagrawal2122@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/Manasvi-Agrawal12" target="_blank"
+            rel="noopener noreferrer">Manasvi-Agrawal12</a></p>
+        <p>Location: Bharatpur, Rajasthan, India</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">Manasvi Agrawal · Software Engineering Portfolio · 2026</div>
+  </footer>
+</body>
+
+</html>
